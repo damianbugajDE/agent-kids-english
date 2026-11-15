@@ -1,0 +1,20 @@
+[project]
+name = "agent-kids-english"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "damianbugajDE", email = "damianbugajit@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=3.51.0",
+    "spacy>=3.8.18",
+]
+
+[project.scripts]
+agent-kids-english = "agent_kids_english:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
